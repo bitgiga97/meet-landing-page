@@ -1,0 +1,286 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Red Hat Display', 'sans-serif';
+    font-style: normal;
+    background: #FAFAFA;
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 11.9rem;
+    height: 2.8rem;
+    background-image: url(./assets/logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.8rem;
+    margin-bottom: 5.4rem;
+}
+
+.bg-img {
+    height: 15.3rem;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 4.8rem;
+    justify-content: space-between;
+}
+
+.left {
+    width: 19.9rem;
+    height: 15.3rem;
+    margin-left: -2rem;
+    background-image: url(./assets/desktop/image-hero-left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right {
+    width: 19.9rem;
+    height: 15.3rem;
+    background-image: url(./assets/desktop/image-hero-right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: -2rem;
+}
+
+
+/* Typography */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.4rem 0 2.4rem;
+}
+
+.intro>h1 {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    color: #28283D;
+    margin-bottom: 2.4rem;
+}
+
+.intro>p {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #87879D;
+    margin-bottom: 3.2rem;
+}
+
+.download,
+.download-footer {
+    width: 19.3rem;
+    height: 5.8rem;
+    border-radius: 2.9rem;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 1.6rem;
+}
+
+.download {
+    background: #4D96A9;
+}
+
+.download-footer {
+    background: #855FB1;
+}
+
+.download>span {
+    color: #8FE3F9;
+}
+
+.download-footer>span {
+    color: #D9B8FF;
+}
+
+.about {
+    width: 13.9rem;
+    height: 5.8rem;
+    background: #855FB1;
+    border-radius: 2.9rem;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 6.4rem;
+}
+
+.text>h3 {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #4D96A9;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+.text>h2 {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: #28283D;
+    margin-bottom: 3.2rem;
+}
+
+.text>p {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #87879D;
+    margin-bottom: 6.4rem;
+}
+
+.text {
+    padding: 0 2.4rem 0 2.4rem;
+}
+
+.wrapper>h2 {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: #FAFAFA;
+    margin-bottom: 2.4rem;
+}
+
+.wrapper>p {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FAFAFA;
+    margin-bottom: 3.2rem;
+    padding: 0 2.4rem 0 2.4rem;
+}
+
+
+/* Divider LOGO */
+
+.divider-logo-1,
+.divider-logo-2 {
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6.4rem;
+}
+
+.stick {
+    height: 8.4rem;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    border: 1px solid #87879D;
+}
+
+.circle {
+    width: 5.6rem;
+    height: 5.6rem;
+    background: #FAFAFA;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    border-radius: 29px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    color: #87879D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Context images */
+
+.gallery {
+    width: 32.7rem;
+    height: 31rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 2.5rem;
+    margin-bottom: 6.4rem;
+}
+
+.gallery>img {
+    width: 15.1rem;
+    height: 14.3rem;
+    border-radius: 0.8rem;
+}
+
+.context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 42.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./assets/mobile/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 12.8rem;
+}
+
+.divider-logo-2 {
+    margin-top: -11rem;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: normal;
+    background-color: hsl(193, 33%, 51%, .85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
