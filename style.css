@@ -53,6 +53,10 @@ header {
     margin-right: -2rem;
 }
 
+.for-desktop {
+    display: none;
+}
+
 
 /* Typography */
 
@@ -179,7 +183,7 @@ header {
     padding: 0 2.4rem 0 2.4rem;
 }
 
-.wrapper>h2 {
+.footer-text>h2 {
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 900;
@@ -190,7 +194,7 @@ header {
     margin-bottom: 2.4rem;
 }
 
-.wrapper>p {
+.footer-text>p {
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 500;
@@ -200,6 +204,12 @@ header {
     color: #FAFAFA;
     margin-bottom: 3.2rem;
     padding: 0 2.4rem 0 2.4rem;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -329,13 +339,13 @@ footer {
     .text>h3 {
         margin-bottom: 1.6rem;
     }
-    .wrapper>h2 {
+    .footer-text>h2 {
         font-size: 4rem;
         line-height: 4.4rem;
         margin-bottom: 3.2rem;
         padding: 0 15.6rem 0 15.5rem;
     }
-    .wrapper>p {
+    .footer-text>p {
         margin-bottom: 4rem;
         padding: 0 9.8rem 0 9.7rem;
     }
@@ -363,10 +373,110 @@ footer {
         height: 15.6rem;
         justify-content: center;
     }
+    .gallery>img {
+        width: 16.4rem;
+        height: 15.6rem;
+    }
     .text {
         padding: 0 9.8rem 0 9.8rem;
     }
     footer {
         background-image: url(./assets/tablet/image-footer.jpg);
+    }
+}
+
+
+/* Responsive design for desktop version */
+
+@media screen and (min-width:1440px) {
+    header {
+        margin: 8rem 0 6.1rem 0;
+    }
+    .rm {
+        display: none;
+    }
+    .for-desktop {
+        display: block;
+        height: 35.8rem;
+        margin-bottom: 3.9rem;
+    }
+    .intro {
+        padding: 0 8.8rem 0 8.8rem;
+        width: 54rem;
+        height: 30.4rem;
+    }
+    /* Typography */
+    .intro>h1 {
+        font-size: 6.4rem;
+        line-height: 6.4rem;
+        margin-bottom: 3.4rem;
+    }
+    .intro>p {
+        font-size: 1.8rem;
+    }
+    .text>p {
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+    /* Positioning */
+    .divider-logo-1 {
+        margin-bottom: 6.4rem;
+    }
+    .gallery {
+        margin-bottom: 8rem;
+        height: 24.2rem;
+    }
+    .gallery>img {
+        width: 25.5rem;
+        height: 24.2rem;
+    }
+    .text {
+        width: 54rem;
+        height: 24rem;
+    }
+    footer {
+        margin-top: 20rem;
+        background-image: url(./assets/desktop/image-footer.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 30.8rem;
+    }
+    .footer-text {
+        width: 111rem;
+        height: 8.8rem;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer-text>h2 {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-text>p {
+        padding: 0 9.8rem 0 12.5rem;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        margin: 0;
+    }
+    .download-footer {
+        padding: 0;
+        margin: 0;
+        flex-basis: 59%;
+    }
+    /* Hover styles */
+    .download:hover {
+        cursor: pointer;
+        background-color: #71C0D4;
+    }
+    .about:hover {
+        cursor: pointer;
+        background: #B18BDD;
+    }
+    .download-footer:hover {
+        cursor: pointer;
+        background-color: #B18BDD;
     }
 }
